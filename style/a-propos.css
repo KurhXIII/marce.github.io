@@ -1,0 +1,41 @@
+.A-propos {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    gap: 60px;
+    max-width: 1500px;
+}
+  
+.A-propos div {
+    min-width: 350px;
+}
+  
+.A-propos img {
+    border-radius: 40% 60% 81% 19% / 43% 30% 70% 57% ;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* à retravailler au niveau du titre bannière et de la photo section à propos qui se deforme en largeur */
+
+@media screen and (max-width: 1100px) {
+    .A-propos {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 50px 40px;
+    }
+  
+    .A-propos div {
+      text-align: center;
+      order: 1;
+    }
+  
+    .A-propos img {
+      order: 2;
+      margin-bottom: 20px;
+    }
+  
+}
